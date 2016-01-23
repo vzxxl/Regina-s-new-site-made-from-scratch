@@ -1,0 +1,59 @@
+@media screen and (min-width: 480px) {
+  
+/*************************************
+TWO COLUMN LAYOUT
+**************************************/
+  
+  #primary {
+  width: 50%;
+  float: left;
+  }
+  
+  #secondary {
+  width: 40%;
+  float: right;
+  }
+
+  #third_section {
+  max-width:333px;
+  margin-right:auto;
+  clear: right;
+  }
+  
+ 
+
+
+}
+
+/*************************************
+PAGE: PORTFOLIO
+**************************************/
+@media screen and (min-width: 750px) {
+  
+
+
+#gallery li {
+width: 28.3333%;
+}
+
+
+#gallery li:nth-child(7n) {
+clear: left;
+}
+
+
+#gallery li:nth-child(10) {
+clear: left;
+}
+
+#gallery li:nth-child(13) {
+clear: left;
+}
+
+#gallery li:nth-child(14) {
+clear: none;
+}
+
+
+}
+

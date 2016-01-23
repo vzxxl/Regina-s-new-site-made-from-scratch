@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Регина Тихонова | Заказать фотографа спб</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+  <meta name="description" content="Мои контакты. На этой странице вы узнаете, как со мной связаться, чтобы заказать фотосессию в спб или обработку фотографий">
+  <meta name="keywords" content="Обо мне, контакты, связаться со мной, фотограф спб недорого">
+  </head>
+<body>
+  <header>
+    <a href="index.html" id="logo">
+      <h1>Regina Tihonova</h1>
+      <h2>Photogapher and retoucher</h2>
+    </a>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Portfolio</a>
+        </li>
+        <li>
+          <a href="about.html">About me</a>
+        </li>
+        <li>
+          <a href="contact.html" class="selected">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="fullscreen-bg">
+    <video loop muted autoplay class="fullscreen-bg__video">
+        <source src="video/video1.mp4" type="video/mp4">
+    </video>
+</div>
+  <div id="wrapper">
+    <section id="primary">
+      <h3>General Information</h3>
+      <p>
+        Здесь вся информация о том, как со мной можно связаться
+        <hr></p>
+      <p>
+        I currently live in St. Petersburg, Russia. My time zone is GMT/UTC +3 (Moscow)
+      </p>
+    </section>
+    <section id="secondary">
+      <h3>Contact Details</h3>
+      <ul class="contact-info">
+        <li class="phone">
+          <a href="tel:+79818008425">tel.: +79818008425</a>
+        </li>
+        <li class="mail">
+          <a href="mailto:vzxxl@yandex.ru">email: Tihonova_Regina@mail.ru</a>
+        </li>
+        <li class="instagram">
+          <a href="http://instagram.com/tihonova_regina" target="_blank">/tihonova_regina</a>
+        </li>
+      </ul>
+    </section>
+  <section id="third_section">
+      <div style="float:left; clear:both">
+          <?php
+               if ($_GET['mail'] == 1) echo "Ваше сообщение отправлено";
+          ?>
+      </div>
+        <form id="form_for_message" action="request.php" method="post">
+          <label for="form_name">Name:</label>
+          <input style="margin-top:5px; margin-bottom:20px; clear:right" id="form_name" type="text" name="name"><br>
+          <label for="form_email">E-mail:</label>
+          <input style="margin-top:5px; margin-bottom:20px" id="form_email" type="text" name="email"><br>
+          <label for="textarea">Message:</label><br>
+          <textarea  style="margin-bottom:5px" id="textarea" name="message" rows="10" cols="30"></textarea><br>
+          <input style="margin-top:15px; border-radius:10px" id="input_button" type="submit" name="Send/Отправить"></form>
+      </section>
+      <div id="border_fixer" style="display:block; height: 500px"></div>
+    <footer>
+      <a href="http://www.fb.com/profile.php?id=100000228710450" target="_blank">
+        <img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+      <p>&copy; 2015-2016 Regina Tihonova</p>
+    </footer>
+  </div>
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter34215905 = new Ya.Metrika({
+                    id:34215905,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/34215905" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</body>
+
+</html>
